@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <!-- Botón para cerrar el modal -->
+    <div class="icon-close">
+      <button mat-icon-button (click)="cerrar_modal()" aria-label="Cerrar">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  
+    <!-- Contenido del modal -->
+    <div class="body-modal">
+      <h1 class="title-modal">Editar Evento</h1>
+      <p class="descripcion">
+        Estás a punto de editar esta evento. Una vez que lo edites no podrás deshacer esta acción.
+      </p>
+  
+      <!-- Botones de acción -->
+      <div class="buttons-modal">
+        <button mat-stroked-button class="btn-regresar" (click)="cerrar_modal()">
+          Cancelar
+        </button>
+        <button mat-raised-button color="primary" class="btn-editar" (click)="editarEvento()">
+          Editar
+        </button>
+      </div>
+    </div>
+  </div>
